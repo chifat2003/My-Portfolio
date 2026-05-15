@@ -10,7 +10,38 @@ export default function Home() {
     'Node.js', 'Express', 'MongoDB', 'PostgreSQL', 'Git'
   ];
 
-  const projects = [];
+  const projects = [
+    {
+      title: 'Kin Keeper',
+      description: 'A family relationship management app to track and organize family connections.',
+      fullDescription: 'Kin Keeper is a comprehensive family relationship management application designed to help users organize, track, and maintain their family connections. The app provides an intuitive interface for managing family trees and relationships.',
+      image: '/kin-keeper.png',
+      tech: ['React', 'Next.js', 'Tailwind CSS', 'MongoDB'],
+      features: ['Family tree visualization', 'Relationship tracking', 'Photo gallery', 'Event management'],
+      link: 'https://kin-keeper.vercel.app',
+      github: 'https://github.com/chifat2003/kin-keeper'
+    },
+    {
+      title: 'Qurbanihat',
+      description: 'An Islamic charity platform for managing Qurbani donations and distributions.',
+      fullDescription: 'Qurbanihat is a specialized platform designed to streamline the process of Qurbani (animal sacrifice) donations during Islamic holidays. It connects donors with recipients and manages the entire donation lifecycle.',
+      image: '/qurbanihat.png',
+      tech: ['React', 'Node.js', 'Express', 'PostgreSQL'],
+      features: ['Donation management', 'Recipient tracking', 'Payment integration', 'Distribution logistics'],
+      link: 'https://qurbanihat.vercel.app',
+      github: 'https://github.com/chifat2003/qurbanihat'
+    },
+    {
+      title: 'GitHub Issue Tracker',
+      description: 'A powerful issue tracking system for managing GitHub repositories and issues.',
+      fullDescription: 'GitHub Issue Tracker is a comprehensive tool for tracking, organizing, and managing GitHub issues. It provides advanced filtering, sorting, and reporting capabilities to help teams stay organized.',
+      image: '/github-issue-tracker.png',
+      tech: ['React', 'GitHub API', 'Tailwind CSS', 'TypeScript'],
+      features: ['Issue filtering', 'Real-time updates', 'Advanced search', 'Analytics dashboard'],
+      link: 'https://github-issue-tracker.vercel.app',
+      github: 'https://github.com/chifat2003/github-issue-tracker'
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 dark:from-slate-950 dark:via-purple-950 dark:to-slate-900">
@@ -252,14 +283,6 @@ export default function Home() {
                   className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-xl hover:shadow-xl hover:scale-105 transition-all duration-300 font-semibold"
                 >
                   Live Demo
-                </a>
-                <a
-                  href={selectedProject.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-3 border-2 border-purple-600 text-purple-600 dark:text-purple-400 dark:border-purple-400 rounded-xl hover:bg-purple-600 hover:text-white dark:hover:bg-purple-400 dark:hover:text-slate-900 transition-all duration-300 font-semibold"
-                >
-                  View Code
                 </a>
               </div>
             </div>
